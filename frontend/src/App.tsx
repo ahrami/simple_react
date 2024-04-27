@@ -2,12 +2,14 @@ import Button from "./Button"
 import axios from "axios"
 import { useEffect, useState } from "react"
 
+const BACKEND = import.meta.env.VITE_BACKEND_URL + ":" + import.meta.env.VITE_BACKEND_PORT
+
 function App() {  
   const [count, setCount] = useState<null | number>(null)
   
   useEffect(() => {
     const abortController = new AbortController();
-    axios.get("http://localhost:8000/", { signal: abortController.signal }).then(res => {
+    axios.get(BACKEND, { signal: abortController.signal }).then(res => {
       console.log(res.data)
       setCount(res.data.count)
     }).catch(err => {
@@ -21,7 +23,7 @@ function App() {
 
   function add(value: number) {
     setCount(null)
-    axios.post("http://localhost:8000/add", { value }).then(res => {
+    axios.post(BACKEND + "/add", { value }).then(res => {
       console.log(res.data)
       setCount(res.data.count)
     }).catch(err => {
@@ -31,7 +33,7 @@ function App() {
 
   function subtract(value: number) {
     setCount(null)
-    axios.post("http://localhost:8000/subtract", { value }).then(res => {
+    axios.post(BACKEND + "/subtract", { value }).then(res => {
       console.log(res.data)
       setCount(res.data.count)
     }).catch(err => {
@@ -41,7 +43,7 @@ function App() {
 
   function requestCount() {
     setCount(null)
-    axios.get("http://localhost:8000/").then(res => {
+    axios.get(BACKEND).then(res => {
       console.log(res.data)
       setCount(res.data.count)
     }).catch(err => {
