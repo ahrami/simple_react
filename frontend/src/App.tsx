@@ -13,8 +13,7 @@ function App() {
       console.log(res.data)
       setCount(res.data.count)
     }).catch(err => {
-      if (err.name === 'CanceledError') { }
-      else {
+      if (err.name !== 'CanceledError') {
         console.log(err.message);
       }
     })
@@ -74,20 +73,20 @@ function App() {
           <div className="my-2 border-b border-zinc-300"></div>
           <div className="flex gap-2 items-center">
             <div className="w-24">Add 1</div>
-            <Button callback={() => { add(1) }}></Button>
+            <Button callback={() => { add(1) }} icon={<i className="fa-solid fa-plus"></i>}></Button>
           </div>
           <div className="flex gap-2 items-center">
             <div className="w-24">Add 3</div>
-            <Button callback={() => { add(3) }}></Button>
+            <Button callback={() => { add(3) }} icon={<i className="fa-solid fa-plus"></i>}></Button>
           </div>
           <div className="my-2 border-b border-zinc-300"></div>
           <div className="flex gap-2 items-center">
             <div className="w-24">Subtract 1</div>
-            <Button callback={() => { subtract(1) }}></Button>
+            <Button callback={() => { subtract(1) }} icon={<i className="fa-solid fa-minus"></i>}></Button>
           </div>
           <div className="flex gap-2 items-center">
             <div className="w-24">Subtract 3</div>
-            <Button callback={() => { subtract(3) }}></Button>
+            <Button callback={() => { subtract(3) }} icon={<i className="fa-solid fa-minus"></i>}></Button>
           </div>
           <div className="my-2 border-b border-zinc-300"></div>
           <div className="flex gap-2 items-center">
