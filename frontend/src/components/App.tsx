@@ -1,11 +1,11 @@
-import Sidebar from "./Sidebar"
+import Sidebar from "./sidebar/Sidebar"
 import Navbar from "./Navbar"
 import Counter from "./Counter"
 
 function App() {  
   
   let numbers: number[] = []
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 0; i++) {
     numbers.push(i)
   }
   
@@ -18,7 +18,8 @@ function App() {
         <div className="my-3">
           {numbers.map(i => {
             return (
-              <div className="py-1 px-2 text-zinc-600 my-0.5 bg-zinc-100 rounded hover:bg-zinc-200 cursor-pointer">
+              <div className="py-1 px-2 text-zinc-600 my-0.5 bg-zinc-100 rounded 
+              hover:bg-zinc-200 cursor-pointer" key={i}>
                 Array Element {i}
               </div>
             )
