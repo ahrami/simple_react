@@ -4,6 +4,6 @@ Frontend - react
 
 Backend - fastapi
 
-Database - 
+Database - no db
 
 Uses fontawesome-free-6.5.1-web
