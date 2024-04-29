@@ -8,11 +8,9 @@ from .config import settings
 
 app = FastAPI()
 
-#frontend = settings.frontend_url + ":" + str(settings.frontend_port)
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["localhost"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
