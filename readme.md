@@ -1,7 +1,7 @@
 *Simple React-powered Application
 
 Frontend - react<br>
-Setup [link](frontend/readme.md)
+Setup [link](frontend/README.md)
 
 Backend - fastapi<br>
 Setup [link](backend/readme.md)
