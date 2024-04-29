@@ -66,7 +66,8 @@ function Counter() {
           icon={<div className="w-8">+5</div>} />
         <Button callback={() => { add(10) }}
           icon={<div className="w-8">+10</div>} />
-        <div className="border-r border-zinc-300 mx-1 h-10"></div>
+      </div>
+      <div className="flex gap-2 items-center">
         <input className="outline-none w-20 py-2 px-3 border 
         border-zinc-300 bg-zinc-100 rounded-md"
           type="number" value={addValue} 
@@ -77,6 +78,7 @@ function Counter() {
         <Button callback={() => { add(addValue) }} 
           icon={<i className="fa-solid fa-plus"></i>} showCount={true}/>
       </div>
+      <div className="my-2 border-b border-zinc-300"></div>
       <div className="flex gap-2 items-center">
         <Button callback={() => { subtract(1) }}
           icon={<div className="w-8">-1</div>} />
@@ -84,7 +86,8 @@ function Counter() {
           icon={<div className="w-8">-5</div>} />
         <Button callback={() => { subtract(10) }}
           icon={<div className="w-8">-10</div>} />
-        <div className="border-r border-zinc-300 mx-1 h-10"></div>
+      </div>
+      <div className="flex gap-2 items-center">
         <input className="outline-none w-20 py-2 px-3 border 
         border-zinc-300 bg-zinc-100 rounded-md"
           type="number" value={subtractValue} 
