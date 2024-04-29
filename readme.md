@@ -1,11 +1,27 @@
-*Simple React-powered Application
+# Simple React
 
-Frontend - react<br>
-Setup [link](frontend/README.md)
+Simple React-powered web application
 
-Backend - fastapi<br>
-Setup [link](backend/readme.md)
+## Backend
 
-Database - no db
+> Setup<br>
+> [readme.md](backend/readme.md)
 
-Uses fontawesome-free-6.5.1-web
+Stack:
+
+- FastAPI
+
+## Frontend
+
+> Setup<br>
+> [readme.md](frontend/README.md)
+
+Stack:
+
+- **React**
+- **Font Awesome:** _fontawesome-free-6.5.1-web_
+
+## _Database - no db_
+
+## Other tools
+
