@@ -38,3 +38,8 @@
 ```sh
 uvicorn src.main:app --reload
 ```
+
+## Start the server
+```sh
+uvicorn src.main:app
+```
