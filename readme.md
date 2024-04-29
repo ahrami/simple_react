@@ -1,8 +1,10 @@
 *Simple React-powered Application
 
-Frontend - react
+Frontend - react<br>
+Setup [link](frontend/readme.md)
 
-Backend - fastapi
+Backend - fastapi<br>
+Setup [link](backend/readme.md)
 
 Database - no db
 
