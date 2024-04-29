@@ -36,10 +36,10 @@
 
 ## Start the development server
 ```sh
-uvicorn src.main:app --reload
+uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
 ## Start the server
 ```sh
-uvicorn src.main:app
+uvicorn src.main:app --host 0.0.0.0 --port 8000
 ```
